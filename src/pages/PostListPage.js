@@ -1,10 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
+// @import '~open-color/open-color';
+
+const Div = styled.div`
+  background: black;
+  color: white;
+`
 
 const PostListPage = () => {
   return (
-    <div>
-      PostListPage
-    </div>
+    <>
+      <Div>
+        PostListPage
+
+        fsdfsdf
+      </Div>
+    </>
   );
 };
 
