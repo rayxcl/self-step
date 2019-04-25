@@ -12,8 +12,6 @@ const PostListPage = () => {
     <>
       <Div>
         PostListPage
-
-        fsdfsdf
       </Div>
     </>
   );

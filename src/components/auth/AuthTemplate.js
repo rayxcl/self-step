@@ -9,22 +9,45 @@ const Container = styled.div`
   bottom: 0;
   right: 0;
 
-  background: #000;
+  background: #E9ECEF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 `
 
+const SubContainer = styled.div`
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
+  padding: 2rem;
+  width: 360px;
+  background: white;
+  border-radius: 2px;
+
+`
+const LogoContainer = styled.div`
+  display: block;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+`
 
 const AuthTemplate = ({ children }) => {
+  console.log(children)
   return (
-    <div className="AuthTemplate">
-      <div className="whitebox">
-        <div className="logo-area">
-          <Link to="/" className="logo">
-            REACTERS
-          </Link>
-        </div>
-        {children}
-      </div>
-    </div>
+    <>
+      <Container>
+        <SubContainer>
+          <LogoContainer>
+            <Link to="/">
+              REACTERS
+            </Link>
+          </LogoContainer>
+          {children}
+        </SubContainer>
+      </Container>
+    </>
   );
 };
 
